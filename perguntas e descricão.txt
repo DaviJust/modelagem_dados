@@ -1,0 +1,192 @@
+1. Quais são as entidades necessárias?
+Empresa parceira
+Área
+Tecnologia
+Colaborador
+
+2. Quais são os principais campos e seus respectivos tipos?
+1. Empresa Parceira:
+
+ID: Número inteiro (chave primária)
+CNPJ: String (14 caracteres) - Validar formato CNPJ
+Nome: String (255 caracteres)
+Ramo de Atividade: String (100 caracteres)
+Endereço: String (255 caracteres)
+Telefone: String (20 caracteres) - Validar formato telefone
+2. Área:
+
+ID Área: Número inteiro (chave primária)
+Nome: String (100 caracteres)
+Descrição: String (255 caracteres)
+Empresa Parceira_ID: Número inteiro (chave estrangeira para a tabela Empresa Parceira)
+3. Tecnologia:
+
+ID: Número inteiro (chave primária)
+Nome: String (100 caracteres)
+Descrição: String (255 caracteres)
+4. Tecnologia_Área:
+
+ID: Número inteiro (chave primária)
+Tecnologia_ID: Número inteiro (chave estrangeira para a tabela Tecnologia)
+Área_ID: Número inteiro (chave estrangeira para a tabela Área)
+5. Colaborador:
+
+Matrícula: Número inteiro (chave primária)
+CPF: String (11 caracteres) - Validar formato CPF
+Nome: String (255 caracteres)
+Email: String (100 caracteres) - Validar formato email
+Empresa Parceira_Área_ID: Número inteiro (chave estrangeira para a tabela Empresa-Parceira_Área)
+
+3. Como essas entidades estão relacionadas?
+
+Uma empresa parceira pode ter diversas áreas (relação 1 para N).
+Uma área pode ter diversas tecnologias (relação 1 para N).
+Uma tecnologia pode ser utilizada em diversas áreas (relação 1 para N).
+Uma empresa parceira pode ter diversos colaboradores (relação 1 para N).
+Um colaborador está associado a uma única empresa parceira e a uma única área de atuação dentro da empresa (relação 1 para 1).
+Uma empresa parceira pode ter diversos contratos rescindidos (relação 1 para N).
+
+
+4. Simule 1 registro para cada entidade.
+Entidades e Registros:
+
+1. Empresa Parceira:
+
+Registro 1:
+
+ID: 101
+CNPJ: 00.000.000/0001-00
+Nome: ACME Technology Solutions
+Ramo de Atividade: Desenvolvimento de Software
+Endereço: Rua da Inovação, 123 - Centro
+Telefone: (11) 2222-3333
+Email: [endereço de email removido]
+Data de Cadastro: 2023-10-04
+Situação: Ativo
+Registro 2:
+
+ID: 102
+CNPJ: 11.111.111/1111-11
+Nome: Beta Consulting
+Ramo de Atividade: Consultoria em TI
+Endereço: Avenida Paulista, 987 - Bela Vista
+Telefone: (21) 3333-4444
+Email: [endereço de email removido]
+Data de Cadastro: 2024-02-15
+Situação: Ativo
+2. Área:
+
+Registro 1 (Empresa Parceira 1):
+
+ID Área: 1
+Nome: Desenvolvimento Web
+Descrição: Desenvolvimento de aplicações web e mobile
+Empresa Parceira_ID: 101
+Registro 2 (Empresa Parceira 1):
+
+ID Área: 2
+Nome: DevOps
+Descrição: Automação de processos de desenvolvimento e operação
+Empresa Parceira_ID: 101
+Registro 3 (Empresa Parceira 2):
+
+ID Área: 3
+Nome: Big Data e Analytics
+Descrição: Coleta, análise e visualização de dados
+Empresa Parceira_ID: 102
+Registro 4 (Empresa Parceira 2):
+
+ID Área: 4
+Nome: Segurança da Informação
+Descrição: Implementação de medidas de segurança para sistemas e dados
+Empresa Parceira_ID: 102
+3. Tecnologia:
+
+ID: 1
+
+Nome: Python
+
+Descrição: Linguagem de programação de alto nível e versátil
+
+ID: 2
+
+Nome: Java
+
+Descrição: Linguagem de programação orientada a objetos
+
+ID: 3
+
+Nome: JavaScript
+
+Descrição: Linguagem de programação para desenvolvimento web interativo
+
+ID: 4
+
+Nome: SQL
+
+Descrição: Linguagem de consulta estruturada para bancos de dados
+
+ID: 5
+
+Nome: Git
+
+Descrição: Sistema de controle de versão para código-fonte
+
+4. Tecnologia_Área:
+
+Registro 1:
+
+ID: 1
+Tecnologia_ID: 1
+Área_ID: 1
+Registro 2:
+
+ID: 2
+Tecnologia_ID: 2
+Área_ID: 1
+Registro 3:
+
+ID: 3
+Tecnologia_ID: 3
+Área_ID: 1
+Registro 4:
+
+ID: 4
+Tecnologia_ID: 1
+Área_ID: 2
+Registro 5:
+
+ID: 5
+Tecnologia_ID: 5
+Área_ID: 1
+Registro 6:
+
+ID: 6
+Tecnologia_ID: 4
+Área_ID: 3
+Registro 7:
+
+ID: 7
+Tecnologia_ID: 5
+Área_ID: 3
+Registro 8:
+
+ID: 8
+Tecnologia_ID: 2
+Área_ID: 4
+5. Colaborador:
+
+Registro 1 (Empresa Parceira 1, Área 1):
+
+Matrícula: 1001
+CPF: 222.222.222-22
+Nome: Ana Silva
+Endereço: Rua das Flores
+
+
+Registro 1 (Empresa Parceira 1, Área 1):
+
+Matrícula: 1002
+CPF: 321.222.222-22
+Nome: Carlos Silva
+Endereço: Rua das amoebas
