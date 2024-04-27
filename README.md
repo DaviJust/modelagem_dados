@@ -15,9 +15,6 @@ Este modelo de banco de dados visa facilitar o gerenciamento de empresas parceir
         * `Ramo de Atividade`: String (100 caracteres)
         * `Endereço`: String (255 caracteres)
         * `Telefone`: String (20 caracteres) - Validar formato telefone
-        * `Email`: String (100 caracteres) - Validar formato email
-        * `Data de Cadastro`: Data (formato yyyy-mm-dd)
-        * `Situação`: String (Ativo, Inativo)
 * **Área:**
     * Representa as áreas de atuação das empresas parceiras.
     * Campos:
@@ -43,10 +40,7 @@ Este modelo de banco de dados visa facilitar o gerenciamento de empresas parceir
         * `Matrícula`: Número inteiro (chave primária)
         * `CPF`: String (11 caracteres) - Validar formato CPF
         * `Nome`: String (255 caracteres)
-        * `Endereço`: String (255 caracteres)
-        * `Telefone`: String (20 caracteres) - Validar formato telefone
         * `Email`: String (100 caracteres) - Validar formato email
-        * `Data de Admissão`: Data (formato yyyy-mm-dd)
         * `Empresa Parceira_Área_ID`: Número inteiro (chave estrangeira para a tabela `Empresa-Parceira_Área`)
 * **Rescisão:**
     * Representa as rescisões de contratos com empresas parceiras.
