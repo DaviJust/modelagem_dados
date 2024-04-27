@@ -42,13 +42,6 @@ Este modelo de banco de dados visa facilitar o gerenciamento de empresas parceir
         * `Nome`: String (255 caracteres)
         * `Email`: String (100 caracteres) - Validar formato email
         * `Empresa Parceira_Área_ID`: Número inteiro (chave estrangeira para a tabela `Empresa-Parceira_Área`)
-* **Rescisão:**
-    * Representa as rescisões de contratos com empresas parceiras.
-    * Campos:
-        * `ID Rescisão`: Número inteiro (chave primária)
-        * `Empresa Parceira_ID`: Número inteiro (chave estrangeira para a tabela `Empresa Parceira`)
-        * `Data de Rescisão`: Data (formato yyyy-mm-dd)
-        * `Motivo`: String (255 caracteres)
 
 **Relacionamentos:**
 
