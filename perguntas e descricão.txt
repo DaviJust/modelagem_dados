@@ -5,14 +5,17 @@ Tecnologia
 Colaborador
 
 2. Quais são os principais campos e seus respectivos tipos?
-1. Empresa Parceira:
+1. Empresa parceira:
 
 ID: Número inteiro (chave primária)
 CNPJ: String (14 caracteres) - Validar formato CNPJ
 Nome: String (255 caracteres)
 Ramo de Atividade: String (100 caracteres)
+AREA DA EMPRESA PARCEIRA: (100 caracteres)
 Endereço: String (255 caracteres)
 Telefone: String (20 caracteres) - Validar formato telefone
+IE: string(12 caracteres) 
+
 2. Área:
 
 ID Área: Número inteiro (chave primária)
@@ -50,7 +53,29 @@ Uma empresa parceira pode ter diversos contratos rescindidos (relação 1 para N
 4. Simule 1 registro para cada entidade.
 Entidades e Registros:
 
-1. Empresa Parceira:
+0. Colaborador:
+
+Registro 1:
+MATRICULA	:215616
+CPF	:142555867771
+EMAIL:	saulo_silva_augusto@gmail.com
+NOME: Saulo Silva Augusto Couto
+EMPRESA_PARCEIRA_ID: 101
+RG:3312345678
+Endereço: Rua da Inovação, 44 - Centro
+
+
+
+Registro 2:
+MATRICULA	:215617
+CPF	:152555867880
+EMAIL:	maria_silva_augusto@gmail.com
+NOME: Maria Silva Augusto Carrara
+EMPRESA_PARCEIRA_ID: 102
+RG:3312345428
+Endereço: Avenida Paulista, 22 - Bela Vista
+
+1.Empresa Parceira
 
 Registro 1:
 
@@ -59,10 +84,10 @@ CNPJ: 00.000.000/0001-00
 Nome: ACME Technology Solutions
 Ramo de Atividade: Desenvolvimento de Software
 Endereço: Rua da Inovação, 123 - Centro
+AREA DA EMPRESA PARCEIRA: SEGUROS
 Telefone: (11) 2222-3333
-Email: [endereço de email removido]
-Data de Cadastro: 2023-10-04
-Situação: Ativo
+IE: 156.271.290.110
+E-mail: ACME@gmail.com
 Registro 2:
 
 ID: 102
@@ -71,10 +96,10 @@ Nome: Beta Consulting
 Ramo de Atividade: Consultoria em TI
 Endereço: Avenida Paulista, 987 - Bela Vista
 Telefone: (21) 3333-4444
-Email: [endereço de email removido]
-Data de Cadastro: 2024-02-15
-Situação: Ativo
-2. Área:
+IE: 156.271.290.110
+E-mail: BETA@gmail.com
+
+2. AREA:
 
 Registro 1 (Empresa Parceira 1):
 
@@ -82,12 +107,13 @@ ID Área: 1
 Nome: Desenvolvimento Web
 Descrição: Desenvolvimento de aplicações web e mobile
 Empresa Parceira_ID: 101
-Registro 2 (Empresa Parceira 1):
+
+Registro 2 (Empresa Parceira 2):
 
 ID Área: 2
 Nome: DevOps
 Descrição: Automação de processos de desenvolvimento e operação
-Empresa Parceira_ID: 101
+Empresa Parceira_ID: 102
 Registro 3 (Empresa Parceira 2):
 
 ID Área: 3
@@ -101,6 +127,8 @@ Nome: Segurança da Informação
 Descrição: Implementação de medidas de segurança para sistemas e dados
 Empresa Parceira_ID: 102
 3. Tecnologia:
+
+3. TECNOLOGIA:
 
 ID: 1
 
@@ -139,54 +167,10 @@ Registro 1:
 ID: 1
 Tecnologia_ID: 1
 Área_ID: 1
+
 Registro 2:
 
 ID: 2
 Tecnologia_ID: 2
 Área_ID: 1
-Registro 3:
 
-ID: 3
-Tecnologia_ID: 3
-Área_ID: 1
-Registro 4:
-
-ID: 4
-Tecnologia_ID: 1
-Área_ID: 2
-Registro 5:
-
-ID: 5
-Tecnologia_ID: 5
-Área_ID: 1
-Registro 6:
-
-ID: 6
-Tecnologia_ID: 4
-Área_ID: 3
-Registro 7:
-
-ID: 7
-Tecnologia_ID: 5
-Área_ID: 3
-Registro 8:
-
-ID: 8
-Tecnologia_ID: 2
-Área_ID: 4
-5. Colaborador:
-
-Registro 1 (Empresa Parceira 1, Área 1):
-
-Matrícula: 1001
-CPF: 222.222.222-22
-Nome: Ana Silva
-Endereço: Rua das Flores
-
-
-Registro 1 (Empresa Parceira 1, Área 1):
-
-Matrícula: 1002
-CPF: 321.222.222-22
-Nome: Carlos Silva
-Endereço: Rua das amoebas
