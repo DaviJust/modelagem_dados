@@ -1,4 +1,4 @@
-![image](https://github.com/DaviJust/modelagem_dados/assets/112717111/ce302947-d36f-488c-9605-e82d260b65a3)## Modelo de Banco de Dados - Gerenciamento de Empresas Parceiras e Colaboradores
+## Modelo de Banco de Dados - Gerenciamento de Empresas Parceiras e Colaboradores
 
 **Objetivo:**
 
