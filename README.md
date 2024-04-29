@@ -1,4 +1,4 @@
-## Modelo de Banco de Dados - Gerenciamento de Empresas Parceiras e Colaboradores
+![image](https://github.com/DaviJust/modelagem_dados/assets/112717111/ce302947-d36f-488c-9605-e82d260b65a3)## Modelo de Banco de Dados - Gerenciamento de Empresas Parceiras e Colaboradores
 
 **Objetivo:**
 
@@ -15,6 +15,9 @@ Este modelo de banco de dados visa facilitar o gerenciamento de empresas parceir
         * `Ramo de Atividade`: String (100 caracteres)
         * `Endereço`: String (255 caracteres)
         * `Telefone`: String (20 caracteres) - Validar formato telefone
+        * `Área da Empresa Parceira`: String (40 caracteres)
+        * `IE`: String (13 caracteres)
+        * `EMAIL`: String (80 caracteres)
 * **Área:**
     * Representa as áreas de atuação das empresas parceiras.
     * Campos:
@@ -42,6 +45,8 @@ Este modelo de banco de dados visa facilitar o gerenciamento de empresas parceir
         * `Nome`: String (255 caracteres)
         * `Email`: String (100 caracteres) - Validar formato email
         * `Empresa Parceira_Área_ID`: Número inteiro (chave estrangeira para a tabela `Empresa-Parceira_Área`)
+        * `RG`: String(14 caracteres)
+        * `Endereço`: String(255 caracteres)
 
 **Relacionamentos:**
 
